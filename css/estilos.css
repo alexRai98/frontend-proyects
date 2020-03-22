@@ -1,1 +1,219 @@
+/* Importar fuentes de google fonts */
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400,700&display=swap');
+:root{
+  --gris_oscuro: #1b252c;
+  --gris_claro: #626262;
+  --gris_super_claro: #fafafa;
+  --gris: #1b2127;
+  --celeste: #026fff;
+  --celeste_claro: #056fff;
+}
+*{
+  box-sizing: border-box;
+}
+h2{
+  color: var(--celeste);
+  text-transform: uppercase;
+  font-family:'Sourse Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
 
+body{
+  font-family:'Sourse Sans Pro', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fjalla One',Times, serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+h1{
+  font-size: 40px;
+  /* interlineado */
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0px;
+
+}
+h1 strong{
+  color: var(--celeste);
+}
+figure{
+  margin: 0;
+  padding: 0px;
+}
+.header{
+  background-color: var(--gris_oscuro);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.menu{
+  height: inherit;
+}
+.header ol{
+  margin: 0;
+  display: flex;
+  list-style: none;
+  height: inherit;
+}
+.header li{
+  height: inherit;
+}
+
+.header a{
+  height: inherit;
+  align-items: center;
+  display: flex;
+  padding: 0 15px;;
+}
+.rectangulo{
+  border: 1px solid #ffffff;
+  padding: 7px;
+}
+.header a:hover{
+  color: var(--gris_claro);
+}
+
+.hero{
+  height: 300px;
+  /* display: flex; */
+  background-color: var(--gris);
+  background-image: url(../imagenes/portada.jpg);
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center;
+}
+.portfolio{
+  background: var(--gris_super_claro);
+  margin: 20px;
+  
+}
+
+.project{
+  /* border-top: tamaño tipo estilo; */
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.project strong{
+  font-family: 'Fjalla One',Times, serif;
+}
+.project_title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project_date, .project_course, .project_url{
+  margin: 10px 0;
+}
+.project_url a{
+  color: #000000;
+}
+.project_url a:hover{
+  color: var(--gris_claro);
+}
+.project_description{
+  font-size: 20px;
+}
+.project_details,.project_image_container{
+  width: 500px;
+}
+.event_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event_list h2{
+  margin: 10px;
+}
+.event{
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafbff;
+  text-align: center;
+}
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event_detail{
+  margin: 20px 40px;
+  margin-top: -50px;
+  background : #ffffff;
+  position: relative;
+  padding: 10px;
+}
+.event_list_tile{
+  padding: 15px;
+}
+.event_detail a{
+  border: 1px solid var(--celeste_claro);
+  border-radius: 5px;
+  color: var(--celeste);
+  padding: 10px;
+  
+}
+.event_detail a:hover{
+  color: white;
+  background: var(--celeste_claro);
+}
+.event_description{
+  text-align: left;
+}
+.contacto{
+  background: var(--celeste_claro);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form_email{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form_email input{
+  margin: 15px 0;
+}
+.contact_img{
+  padding: 0 20px;
+}
+.contact_img img{
+  margin: 0 30px;
+}
+.footer{
+  background: var(--gris_oscuro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer img{
+  vertical-align: middle;
+}
+.footer p{
+  margin: 0 15px;
+  color: white;
+}
