@@ -51,6 +51,16 @@ figure{
   margin: 0;
   padding: 0px;
 }
+.container{
+  width: 1080px;
+  color: inherit;
+  align-items: inherit;
+  display: inherit;
+  justify-content: inherit;
+  height: inherit;
+  margin: 0 auto;
+  flex-wrap: inherit;
+}
 .header{
   background-color: var(--gris_oscuro);
   color: white;
@@ -90,10 +100,6 @@ figure{
   height: 300px;
   /* display: flex; */
   background-color: var(--gris);
-  background-image: url(../imagenes/portada.jpg);
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position: right;
   display: flex;
   align-items: center;
 }
@@ -141,6 +147,7 @@ figure{
 .event_list{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .event_list h2{
   margin: 10px;
@@ -194,10 +201,32 @@ figure{
   padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 250px;
 }
 .form_email input{
   margin: 15px 0;
+  height: 35px;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 5px 20px 5px 25px;
+  border-color: grey;
+  background-image: url(../imagenes/envelope.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
 }
+.form_email button{
+  height: 30px;
+  width: 100px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+
+}
+
 .contact_img{
   padding: 0 20px;
 }
